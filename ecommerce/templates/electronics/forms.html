@@ -1,0 +1,15 @@
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">{% endblock css %}
+
+
+
+{% block content %}
+<form action=""> 
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+
+
+</form>
+
+{% endblock content %}
